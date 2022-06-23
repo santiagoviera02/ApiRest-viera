@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+
+    <h1>Lista de pacientes</h1><br>
+
+    <button type="button" class="boton btn btn-primary" (click)="nuevoPaciente()">Agregar Paciente</button>
+
+    <table class="tabla table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">DNI</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let paciente of pacientes" (click)="editarPaciente(paciente.PacienteId)">
+                <th scope="row">{{ paciente.PacienteId }}</th>
+                <td>{{ paciente.Nombre }}</td>
+                <td>{{ paciente.DNI }}</td>
+                <td>{{ paciente.Telefono }}</td>
+                <td>{{ paciente.Correo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<div class="footer">
+    <app-footer></app-footer>
+</div>

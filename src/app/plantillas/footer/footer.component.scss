@@ -1,0 +1,18 @@
+footer {
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
